@@ -39,5 +39,10 @@ const items = [
 // Omit the 'age' element
 
 const person = items // append your code here
+.reduce((prev, ({ firstName })) => {
+    
+    return prev
+}, { })
+
 
 test("Problem 4", person)

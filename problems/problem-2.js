@@ -50,5 +50,6 @@ const strings = [
 ]
 
 const jedi = strings // append your code here
+.filter(strings => strings.firstName.lastName.age.occupation.homePlanet.includes('Jedi'))
 
 test("Problem 2", jedi)
