@@ -50,6 +50,7 @@ const strings = [
 ]
 
 const jedi = strings // append your code here
-.filter(strings => strings.firstName.lastName.age.occupation.homePlanet.includes('Jedi'))
+	.map(character => JSON.parse(`{${character}}`))
+	.filter(character => character.occupation === "Jedi");
 
 test("Problem 2", jedi)
